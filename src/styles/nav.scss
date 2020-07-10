@@ -16,6 +16,7 @@
     text-decoration: none;
     text-transform: uppercase;
     cursor: $linkCursor;
+    transition: color 1s;
 
     &:last-of-type {
       margin-right: 0;

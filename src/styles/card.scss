@@ -4,12 +4,21 @@
   align-items: center;
   width: 200px;
   padding: 30px 14px 14px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $cardBorderColor;
   border-radius: 5px;
 
   &__photo {
     width: 160px;
     height: 134px;
+    transition: transform 1s;
+
+    &:hover {
+      box-sizing: content-box;
+      outline: 3px solid $cardBorderColor;
+      margin: -14px 0;
+      padding: 14px 0;
+      transform: scale(1.2);
+    }
   }
   
   &__description {
@@ -74,6 +83,8 @@
   
     border-radius: 5px;
     border: 1px solid $mainMoyoColor;
+
+    transition: color 1s, background-color 1s;
     
     &:hover {
       color: $mainMoyoColor;
