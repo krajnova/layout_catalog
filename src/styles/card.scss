@@ -1,7 +1,7 @@
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
+  justify-items: center;
   width: 200px;
   padding: 30px 14px 14px;
   border: 1px solid $cardBorderColor;
@@ -41,20 +41,22 @@
   }
   
   &__rating {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     align-items: center;
     margin-top: 14px;
   }
   
   &__reviews-count {
-    align-self: flex-end;
+    align-self: end;
   }
   
   &__value {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: end;
     margin-top: 19px;
   }
   
@@ -65,7 +67,7 @@
   }
   
   &__buy-button {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
   
