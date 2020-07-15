@@ -3,10 +3,12 @@
    
   &__container {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-content: space-between;
-  
-    width: $catalogWidth;
+    grid-template-columns: repeat(auto-fit, $cardWidth);
+    column-gap: $cardGap;
+    justify-content: center;
+
+    max-width: $catalogWidth;
+    
     margin: 0 auto;
   }
   
